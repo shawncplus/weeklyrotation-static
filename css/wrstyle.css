@@ -3,6 +3,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-variant: small-caps;
 }
 
+#main {
+	padding-bottom: 2em;
+}
+
+header.albumtitles h3, header.albumtitles h4 {
+	font-weight: normal;
+}
+
+h2.rotation-title {
+	font-weight: 800;
+}
+
+header.special h2.rotation-title + p {
+	padding-top: 0;
+}
+
+header.special.divider {
+	margin-bottom: 1em;
+}
+
 body {
 	font-weight: normal;
 }
@@ -21,6 +41,24 @@ body {
 	text-transform: uppercase;
 	font-variant: none;
 }
+
+#discuss {
+	height: 2em;
+}
+
+header.discuss {
+	padding-top: 2em;
+}
+
+header.discuss h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+section.albumlist {
+	margin-bottom: 0;
+}
+
 #cta {
 	background-color: #586164;
 	background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlaycyan.png"), url("../images/recordsbanner.jpg");
@@ -42,4 +80,18 @@ header.special .icon {
 
 .icon.circle.fa-envelope-o:hover {
 	background: #df7b77;
+}
+
+.icon.circle.wr-spotify {
+	background-image: url("../images/spotify.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 0;
+}
+
+.icon.circle.wr-lastfm {
+	background-image: url("../images/lastfm.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 0;
 }
