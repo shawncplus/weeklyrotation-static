@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-variant: small-caps;
 }
 
+body {
+	font-weight: normal;
+}
+
 #banner {
 	background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlaycyan.png"), url("../images/recordsbanner.jpg");
 	background-color: #586164;
@@ -25,4 +29,17 @@ h1, h2, h3, h4, h5, h6 {
 .button.special {
 	background: #1A6882;
 	border-color: #1A6882;
+}
+
+header.special .icon {
+	color: #1A6882;
+}
+
+.icon.circle.fa-envelope-o{
+	background: #db6b67;
+	color: white;
+}
+
+.icon.circle.fa-envelope-o:hover {
+	background: #df7b77;
 }
