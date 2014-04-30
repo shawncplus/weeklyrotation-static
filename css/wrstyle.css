@@ -34,6 +34,11 @@ body {
 
 #banner .inner {
 	background: rgba(32, 48, 49, 0.5);
+	-moz-animation: none;
+	-webkit-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
 }
 
 #banner .inner header h2 {
