@@ -7,7 +7,7 @@ rotation_title: Tall Tales
 rotation_description: "This week is an introduction to a few bands who are all about telling great stories."
 albums:
   - artist: The Mountain Goats
-    title: All Eternals Deck
+    title: The Sunset Tree
     album_art: 'http://o.scdn.co/300/ba75b18b7ae6af17059976f6d45016f632064ee3'
     spotify_link: 'http://open.spotify.com/album/0Cug9j2T7MHK4k8hUEGQ43'
     lastfm_link: 'http://last.fm/music/The+Mountain+Goats/The+Sunset+Tree'
