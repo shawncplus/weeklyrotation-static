@@ -33,7 +33,7 @@ body {
 }
 
 #banner .inner {
-	background: rgba(32, 48, 49, 0.5);
+	background: rgba(9, 37, 39, 0.7);
 	-moz-animation: none;
 	-webkit-animation: none;
 	-o-animation: none;
@@ -46,6 +46,11 @@ body {
 	text-transform: uppercase;
 	font-variant: none;
 }
+
+#banner .inner header h2, #banner .inner header h3, #banner .inner p, #banner .inner h2, #banner .inner a {
+	color: #E6E3C8;
+}
+
 
 #discuss {
 	height: 2em;
