@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 2em;
 }
 
+#header.alt {
+	color: #E6E3C8;
+}
+
 header.albumtitles h3, header.albumtitles h4 {
 	font-weight: normal;
 }
@@ -77,6 +81,7 @@ section.albumlist {
 .button.special {
 	background: #1A6882;
 	border-color: #1A6882;
+	color: #E6E3C8 !important;
 }
 
 header.special .icon {
