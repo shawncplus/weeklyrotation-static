@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta property="og:image" content="http://www.weeklyrotation.com/images/wrlogobig.png">
+		<meta property="og:title" content="Weekly Rotation">
+		<meta property="og:type"  content="website">
+		<meta property="og:description" content="Every week you'll get an email with 3 albums. At the end of the week come back and discuss it in the comments or live in the Google hangout">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/jquery.dropotron.min.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/skel-layers.min.js"></script>
+		<script src="/js/init.js"></script>
+		<link rel="stylesheet" href="/css/skel.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/style-noscript.css">
+		<link rel="stylesheet" href="/css/wrstyle.css">
+		<link href='favicon.ico' rel='shortcut icon'>
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css"><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css"><![endif]-->
+	</head>
+
+	<body class="index loading">
+
+			<header id="header" class="alt">
+				<h1 id="logo"><a href="/">Weekly Rotation</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="submenu">
+							<a href="">Previous Rotations</a>
+							<ul>
+							{% for post in site.categories.rotation %}
+								<li><a href="{{ post.url | remove: 'index.html' }}">{{ post.date | date_to_string }}</a></li>
+							{% endfor %}
+							</ul>
+						</li>
+						<li><a href="http://eepurl.com/TGaSb" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+{{ content }}
+
+
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://twitter.com/weeklyrotation" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="mailto:theweeklyrotation@gmail.com" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+
+				<span class="copyright">&copy; Shawn Biddle. All rights reserved.
+					Layout by <a href="http://twitter.com/n33co">@n33co</a> / <a href="http://html5up.net">HTML5 UP</a>.
+					Header image by <a href="https://www.flickr.com/people/voidobjects/">Flickr/TeppoTK</a>
+				</span>
+			</footer>
+
+	</body>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-50516718-1', 'weeklyrotation.com');
+		ga('send', 'pageview');
+	</script>
+</html>

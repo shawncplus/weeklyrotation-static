@@ -1,0 +1,3 @@
+name: Weekly Rotation
+markdown: redcarpet
+permalink: /:year-:month-:day/index.html

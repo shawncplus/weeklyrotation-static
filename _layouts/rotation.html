@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<section id="banner">
+	<div class="inner">
+		<header>
+			<h2>Weekly Rotation</h2>
+			<h3>Weekly Rotation for the week of {{ page.date | date: '%b %-d, %Y' }}</h3>
+		</header>
+		<h2 class="rotation-title">{{ page.rotation_title }}</h2>
+		<p>{{ page.rotation_description }}</p>
+		<footer>
+			<ul class="buttons vertical">
+				<li><a href="#main" class="button fit scrolly">Listen</a></li>
+			</ul>
+		</footer>
+	</div>
+</section>
+
+<article id="main">
+		<section class="wrapper style1 container special albumlist">
+			<div class="row">
+				{% for album in page.albums %}
+				<div class="4u">
+					<section>
+						<a class="image feature">
+							<img src="{{ album.album_art }}">
+						</a>
+						<header class="albumtitles">
+							<h3>{{ album.artist }}</h3>
+							<h4>{{ album.title }}</h4>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="{{ album.spotify_link }}" class="icon circle wr-spotify">
+									<span class="label">Spotify</span>
+								</a></li>
+								<li><a href="{{ album.lastfm_link }}" class="icon circle wr-lastfm">
+									<span class="label">Last.fm</span>
+								</a></li>
+							</ul>
+						</footer>
+					</section>
+				</div>
+				{% endfor %}
+			</div>
+		</section>
+
+	<div id="discuss"></div>
+
+	<header class="special container discuss">
+		<a href="#discuss" class="button fit scrolly"><h2>Discuss</h2></a>
+	</header>
+</article>
+
+<section id="cta">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'testing-weeklyrotation'; // required: replace example with your forum shortname
+		var disqus_title = document.title;
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
