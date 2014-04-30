@@ -19,6 +19,6 @@ albums:
   - artist: 'Right Away, Great Captain!'
     title: Church of the Good Thief
     album_art: 'http://o.scdn.co/300/c93f09c695f038898f80ea65bd62a68dab214cb0'
-    spotify_link: 'http://o.scdn.co/300/c93f09c695f038898f80ea65bd62a68dab214cb0'
+    spotify_link: 'https://open.spotify.com/album/6mCotg8AmjUM3ViiEyoeew'
     lastfm_link: 'http://www.last.fm/music/Right+Away,+Great+Captain!/The+Church+Of+The+Good+Thief'
 ---
