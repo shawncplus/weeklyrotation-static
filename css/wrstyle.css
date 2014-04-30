@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6 {
+	text-transform: none;
+	font-variant: small-caps;
+}
+
+#banner {
+	background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlaycyan.png"), url("../images/recordsbanner.jpg");
+	background-color: #586164;
+}
+
+#banner .inner {
+	background: rgba(32, 48, 49, 0.5);
+}
+
+#banner .inner header h2 {
+	border: none;
+	text-transform: uppercase;
+	font-variant: none;
+}
+#cta {
+	background-color: #586164;
+	background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlaycyan.png"), url("../images/recordsbanner.jpg");
+}
+
+.button.special {
+	background: #1A6882;
+	border-color: #1A6882;
+}
