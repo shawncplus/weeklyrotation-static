@@ -1,0 +1,50 @@
+---
+layout: default
+title: Weekly Rotation - A Book Club for Music - FAQ
+questions:
+  - question: "How much does it cost?"
+    answer: |-
+      Free. WeeklyRotation just links you to albums, however you listen to them
+      is up to you though we suggest you buy the music if you like it!
+  - question: "How can I suggest an album?"
+    answer: |-
+      Members who contribute to the discussion the previous week will be
+      selected in rotation to pick the next week's albums. If there are so many
+      members that some would never get a chance we'll switch to an album pool
+      where members suggest an album a week and those will be picked off.
+  - question: "What kind of music will be in the weekly rotations?"
+    answer: |-
+      Anything and everything. This is first and foremost a place to discover
+      new music to fall in love with. Because of the "discovery" part the music tends to be
+      new, obscure, or in a genre that doesn't get much love from the radio.
+---
+
+<section id="banner">
+	<div class="inner">
+		<header class="nobody">
+			<h2>FAQ</h2>
+		</header>
+	</div>
+</section>
+
+<article id="main">
+	<section class="wrapper style1 container special">
+		<header class="sectionheader special container">
+			<span class="icon fa-question-circle"></span>
+		</header>
+	{% for question in page.questions %}
+		<div class="row">
+			<div class="3u">&nbsp;</div>
+			<div class="6u faq-question">
+				<header>
+					<h2>{{ question.question }}</h2>
+				</header>
+				<p>{{ question.answer }}</p>
+			</div>
+			<div class="3u">&nbsp;</div>
+		</div>
+	{% endfor %}
+	</section>
+</article>
+
+{% include signup.html %}

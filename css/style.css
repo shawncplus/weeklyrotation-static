@@ -1129,6 +1129,10 @@ header.special .icon {
 	color: #1A6882;
 }
 
+header.sectionheader {
+	margin-bottom: 0;
+}
+
 .icon.circle.fa-envelope-o{
 	background: #db6b67;
 	color: white;
@@ -1155,4 +1159,13 @@ header.special .icon {
 #disqus_thread {
 	background-color: #F3F6FA;
 	padding: 3em;
+}
+
+div.faq-question header h2 {
+	color: #1A6882;
+	font-weight: 900;
+}
+
+#banner .inner header.nobody {
+	margin: 0;
 }
