@@ -2,7 +2,8 @@
 layout: rotation
 title:  "Weekly Rotation - Rotation for April 28, 2014"
 date:   2014-04-28 12:00:00
-categories: rotation
+categories: [rotation, official]
+author: sbiddle
 rotation_title: Tall Tales
 rotation_description: "This week is an introduction to a few bands who are all about telling great stories. Whether that be the recollections of a troubled sailor, a vengeful child, or piecing together last night after a lot too many."
 albums:

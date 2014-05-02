@@ -33,10 +33,10 @@ layout: default
 						</header>
 						<footer>
 							<ul class="icons">
-								<li><a href="{{ album.spotify_link }}" class="icon circle wr-spotify">
+								<li><a href="{{ album.spotify_link }}" class="icon circle wr-spotify" target="_blank">
 									<span class="label">Spotify</span>
 								</a></li>
-								<li><a href="{{ album.lastfm_link }}" class="icon circle wr-lastfm">
+								<li><a href="{{ album.lastfm_link }}" class="icon circle wr-lastfm" target="_blank">
 									<span class="label">Last.fm</span>
 								</a></li>
 							</ul>
@@ -45,6 +45,27 @@ layout: default
 				</div>
 				{% endfor %}
 			</div>
+			{% if site.data.authors[page.author] %}
+			{% assign author = site.data.authors[page.author] %}
+			<header class="author-profile">
+				<h2>Curator</h2>
+				<h3 class="rotation-author">{{ author.name }}</h3>
+			</header>
+			<footer>
+			{% if author.socials %}
+				<ul class="icons">
+				{% for network in author.socials %}
+					{% assign network_info = site.data.socials[network.type] %}
+					{% if network_info %}
+							<li><a href="{{ network_info.url | replace: ':username:',network.username }}" class="icon circle {{ network_info.class }}" target="_blank">
+								<span class="label">{{ network_info.name }}</span>
+							</a></li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			{% endif %}
+			</footer>
+			{% endif %}
 		</section>
 
 	<div id="discuss"></div>
@@ -71,3 +92,4 @@ layout: default
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </section>
+<!-- vim: set syn=liquid : -->

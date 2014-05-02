@@ -1149,6 +1149,11 @@ header.sectionheader {
 	border-radius: 0;
 }
 
+.wr-spotify:before, .wr-lastfm:before {
+	content: ".";
+	color: transparent;
+}
+
 .icon.circle.wr-lastfm {
 	background-image: url("../images/lastfm.png");
 	background-size: contain;
@@ -1161,11 +1166,19 @@ header.sectionheader {
 	padding: 3em;
 }
 
-div.faq-question header h2 {
+div.faq-question header h2, h3.rotation-author {
 	color: #1A6882;
 	font-weight: 900;
 }
 
-#banner .inner header.nobody {
+#banner .inner header.nobody, #main header.author-profile {
 	margin: 0;
+}
+
+header.author-profile {
+	padding-top: 3em;
+}
+
+header.author-profile h2 {
+	margin-bottom: 0;
 }

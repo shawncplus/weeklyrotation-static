@@ -1,0 +1,8 @@
+lastfm:
+    name: Last.fm
+    url: 'http://last.fm/user/:username:'
+    class: wr-lastfm
+twitter:
+    name: Twitter
+    url: 'http://twitter.com/:username:'
+    class: fa-twitter
